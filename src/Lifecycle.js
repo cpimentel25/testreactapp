@@ -1,14 +1,14 @@
-import React, { useState, useEffect, Component } from "react";
+import React, { useState, useEffect } from "react";
 import { useForm } from 'react-hook-form';
 import Swal from "sweetalert2";
 import './styles/styles.scss'
 
-function lifeCycle() {
+const Home = () => {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
 
-    const {register, handleSubmit, errors, reset } = useForm();
+    const {register, handleSubmit, errors } = useForm();
     const [entradas, setEntradas] = useState([]);
 
     const [btnon, setBtnon] = useState(false);
@@ -40,9 +40,6 @@ function lifeCycle() {
     }
 
     // swal2:
-    useEffect(() => {
-
-    }, []);
 
     const showLB = () => {
       Swal.fire({
@@ -158,4 +155,4 @@ function lifeCycle() {
   }
 }
 
-export default lifeCycle;
+export default Home;
