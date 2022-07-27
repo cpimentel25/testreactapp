@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&display=swap");
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(135deg, #0066ed, #00fff4) fixed;
+}
+
+.resBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  font-size: 1.8rem;
+  color: #000;
+}
+
+button, .btnList, .btnPrimary {
+  border: none;
+  border-radius: 2px;
+  padding: 0.7em 1.5em;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.btnPrimary {
+  color: #fff;
+  background-color: #6495ed;
+}
+
+.btnList {
+  background-color: rgb(255, 255, 255);
+}
+
+.styleForm, .boxItems {
+  flex: 1 0 auto;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.boxItems {
+  margin-bottom: 20px;
+}
+
+li {
+  top: 0;
+  border-top: 30px;
+}
+
+h2 {
+  color: #000;
+  margin: 0;
+  padding-bottom: 0.75em;
+  width: 200px;
+}
+
+.styleForm {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.styleForm ul {
+  padding: 0;
+}
+.styleForm li:not(:last-child) {
+  margin-bottom: 15px;
+}
+.styleForm li:not(:last-child) input {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #ebecee;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.boxItems {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.boxItems .listItems {
+  margin: 0 5% 0 5%;
+  text-align: center;
+}
+.boxItems .listItems li {
+  width: 100%;
+  display: inline-block;
+  font-size: medium;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 4px;
+  padding: 0.7em 1em 0.7em 1em;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.boxItems .listItems li:hover {
+  background-color: #6495ed;
+}
+
+p {
+  padding-left: 15px;
+  padding-bottom: 15px;
+}/*# sourceMappingURL=styles.css.map */
